@@ -23,16 +23,6 @@ optional arguments:
 2. Run It `pymuxkali <options>`
 ### pip pymuxkali options
 ```
-usage: pymuxkali.py [-f] [-m] [-u] [-h]
-
-optional arguments:
-  -f, --full       Install Kali Nethunter In Termux Full Version.
-  -m, --minimal    Install Kali Nethunter In Termux Minimal Version.
-  -u, --uninstall  Uninstall Kali Nethunter In Termux.
-  -h, --help       Show This Help Message And Exit.
-```
-### pip pymuxkali options
-```
 usage: pymuxkali [-f] [-m] [-u] [-h]
 
 optional arguments:
