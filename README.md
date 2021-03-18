@@ -19,8 +19,9 @@ optional arguments:
 ```
 ## Usage
 ### How To Use pymuxkali Using pip (Python Package Manager)
-1. Install pykalimux `pip install pymuxkali`
-2. Run It On Termux Terminal `pymuxkali <options>`
+1. Install Dependencies In Termux `pkg update -y && pkg install python -y`
+2. Install pykalimux `pip install pymuxkali`
+3. Run It On Termux Terminal `pymuxkali <options>`
 ### pip pymuxkali options
 ```
 usage: pymuxkali [-f] [-m] [-u] [-h]
