@@ -11,7 +11,9 @@ This is a python script by which you can install Kali Nethunter (Kali Linux) in 
 ```
 usage: pymuxkali.py [-f] [-m] [-u] [-h]
 
-optional arguments:
+Kali-Nethunter-In-Termux Installer
+
+options:
   -f, --full       Install Kali Nethunter In Termux Full Version.
   -m, --minimal    Install Kali Nethunter In Termux Minimal Version.
   -u, --uninstall  Uninstall Kali Nethunter In Termux.
@@ -26,7 +28,9 @@ optional arguments:
 ```
 usage: pymuxkali [-f] [-m] [-u] [-h]
 
-optional arguments:
+Kali-Nethunter-In-Termux Installer
+
+options:
   -f, --full       Install Kali Nethunter In Termux Full Version.
   -m, --minimal    Install Kali Nethunter In Termux Minimal Version.
   -u, --uninstall  Uninstall Kali Nethunter In Termux.
