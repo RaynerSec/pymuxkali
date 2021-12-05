@@ -7,6 +7,7 @@ import os
 import sys
 import argparse
 
+# Main Function
 def main():
     # Process Command Line Arguments
     parser = argparse.ArgumentParser(description='Kali-Nethunter-In-Termux Installer', add_help=False)
@@ -29,5 +30,6 @@ def main():
     if args.uninstall:
       os.system("rm -rf ${HOME}/kali-arm64 && rm -rf ${HOME}/kali-armhf && rm -rf ${PREFIX}/bin/nh && rm -rf ${PREFIX}/bin/nethunter && sleep 1 && echo [+] Successfully Uninstalled ...")
 
+# Driver Code
 if __name__ == "__main__":
     main()
