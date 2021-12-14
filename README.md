@@ -4,10 +4,8 @@ This is a python script by which you can install Kali Nethunter (Kali Linux) in 
 ## Usage
 ### How To Use pymuxkali
 1. Install Dependencies In Termux `pkg update -y && pkg install git python -y`
-2. Git Clone Repo `git clone https://github.com/RaynerSec/pymuxkali`
-3. Change Directory `cd pymuxkali`
-4. Install pymuxkali `pip install .`
-5. Run It On Termux Terminal `pymuxkali <options>`
+2. Install pymuxkali `pip install git+https://github.com/RaynerSec/pymuxkali`
+3. Run It On Termux Terminal `pymuxkali <options>`
 ### pymuxkali options
 ```
 usage: pymuxkali [-f] [-m] [-u] [-h]
