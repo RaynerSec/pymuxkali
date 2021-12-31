@@ -32,7 +32,7 @@ options:
 2. Install pymuxkali `pip install pymuxkali`
 3. Run It On Termux Terminal `pymuxkali <options>`
 #### Update pymuxkali Using PyPI (Python Package Index)
-- Update To The Latest pymuxkali using PyPI (Python Package Index) `pip install --upgrade pymuxkali`
+- Update To The Latest pymuxkali Using PyPI (Python Package Index) `pip install --upgrade pymuxkali`
 ### PyPI pymuxkali options
 ```
 usage: pymuxkali [-f] [-m] [-u] [-h]
