@@ -16,13 +16,14 @@ This is a python script by which you can install Kali Nethunter (Kali Linux) in 
 - Update To The Latest pymuxkali Run This Command Again `pip install git+https://github.com/RaynerSec/pymuxkali`
 ### pymuxkali options
 ```
-usage: pymuxkali [-f] [-m] [-u] [-h]
+usage: pymuxkali [-f] [-m] [-n] [-u] [-h]
 
 Kali-Nethunter-In-Termux Installer
 
 options:
   -f, --full       Install Kali Nethunter In Termux Full Version.
   -m, --minimal    Install Kali Nethunter In Termux Minimal Version.
+  -n, --nano       Install Kali Nethunter In Termux Nano Version.
   -u, --uninstall  Uninstall Kali Nethunter In Termux.
   -h, --help       Show This Help Message And Exit.
 ```
@@ -35,13 +36,14 @@ options:
 - Update To The Latest pymuxkali Using PyPI (Python Package Index) `pip install --upgrade pymuxkali`
 ### PyPI pymuxkali options
 ```
-usage: pymuxkali [-f] [-m] [-u] [-h]
+usage: pymuxkali [-f] [-m] [-n] [-u] [-h]
 
 Kali-Nethunter-In-Termux Installer
 
 options:
   -f, --full       Install Kali Nethunter In Termux Full Version.
   -m, --minimal    Install Kali Nethunter In Termux Minimal Version.
+  -n, --nano       Install Kali Nethunter In Termux Nano Version.
   -u, --uninstall  Uninstall Kali Nethunter In Termux.
   -h, --help       Show This Help Message And Exit.
 ```
