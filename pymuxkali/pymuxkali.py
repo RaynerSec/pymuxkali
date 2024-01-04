@@ -7,16 +7,33 @@ import os
 import sys
 import argparse
 
+# Install Kali Nethunter In Termux Full Version Function
+def full():
+    os.system("cd ${HOME} && curl -fsSL https://bit.ly/install-nethunter-full-termux | bash && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum")
+
+# Install Kali Nethunter In Termux Minimal Version Function
+def minimal():
+    os.system("cd ${HOME} && curl -fsSL https://bit.ly/install-nethunter-minimal-termux | bash && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum")
+
+# Install Kali Nethunter In Termux Nano Version Function
+def nano():
+    os.system("cd ${HOME} && curl -fsSL https://bit.ly/install-nethunter-nano-termux | bash && rm -rf ${HOME}/kalifs-armhf-nano.tar.xz && rm -rf ${HOME}/kalifs-arm64-nano.tar.xz && rm -rf ${HOME}/kalifs-armhf-nano.sha512sum && rm -rf ${HOME}/kalifs-arm64-nano.sha512sum")
+
+# Uninstall Kali Nethunter In Termux Function
+def uninstall():
+    os.system("rm -rf ${HOME}/kali-arm64 && rm -rf ${HOME}/kali-armhf && rm -rf ${PREFIX}/bin/nh && rm -rf ${PREFIX}/bin/nethunter && sleep 1 && echo [+] Successfully Uninstalled ...")
+
 # Main Function
 def main():
     # Process Command Line Arguments
     parser = argparse.ArgumentParser(description='Kali-Nethunter-In-Termux Installer', add_help=False)
     parser.add_argument('-f', '--full', action='store_true', help='Install Kali Nethunter In Termux Full Version.')
     parser.add_argument('-m', '--minimal', action='store_true', help='Install Kali Nethunter In Termux Minimal Version.')
+    parser.add_argument('-n', '--nano', action='store_true', help='Install Kali Nethunter In Termux Nano Version.')
     parser.add_argument('-u', '--uninstall', action='store_true', help='Uninstall Kali Nethunter In Termux.')
     parser.add_argument('-h', '--help', action='help', help='Show This Help Message And Exit.')
     # If No Arguments Provided, Display Usage Information
-    if len(sys.argv)==1:
+    if len(sys.argv) == 1:
       parser.print_help(sys.stderr)
       print("")
       sys.exit(1)
@@ -24,11 +41,13 @@ def main():
     args = parser.parse_args()
     # Command Line Arguments
     if args.full:
-      os.system("cd ${HOME} && curl -fsSL https://bit.do/fNyso | bash && rm -rf ${HOME}/kalifs-armhf-full.tar.xz && rm -rf ${HOME}/kalifs-arm64-full.tar.xz && rm -rf ${HOME}/kalifs-armhf-full.sha512sum && rm -rf ${HOME}/kalifs-arm64-full.sha512sum")
+      full()
     if args.minimal:
-      os.system("cd ${HOME} && curl -fsSL https://bit.do/fNysW | bash && rm -rf ${HOME}/kalifs-armhf-minimal.tar.xz && rm -rf ${HOME}/kalifs-arm64-minimal.tar.xz && rm -rf ${HOME}/kalifs-armhf-minimal.sha512sum && rm -rf ${HOME}/kalifs-arm64-minimal.sha512sum")
+      minimal()
+    if args.nano:
+      nano()
     if args.uninstall:
-      os.system("rm -rf ${HOME}/kali-arm64 && rm -rf ${HOME}/kali-armhf && rm -rf ${PREFIX}/bin/nh && rm -rf ${PREFIX}/bin/nethunter && sleep 1 && echo [+] Successfully Uninstalled ...")
+      uninstall()
 
 # Driver Code
 if __name__ == "__main__":
