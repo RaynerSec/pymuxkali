@@ -3,8 +3,8 @@ This is a python script by which you can install Kali Nethunter (Kali Linux) in 
 
 ## Download Counter
 <p align="left">
-<a href="https://github.com/RaynerSec/pymuxkali/releases/latest"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/RaynerSec/pymuxkali/total?label=GITHUB%20DOWNLOADS&style=for-the-badge"></a>
-<a href="https://pypi.org/project/pymuxkali"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/pymuxkali?label=PYPI%20DOWNLOADS&style=for-the-badge"></a>
+<a href="https://github.com/RaynerSec/pymuxkali/releases/latest"><img alt="GitHub all releases" src="https://img.shields.io/github/downloads/RaynerSec/pymuxkali/total?label=GITHUB%20DOWNLOADS&style=for-the-badge&color=brightgreen"></a>
+<a href="https://pypi.org/project/pymuxkali"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/pymuxkali?label=PYPI%20DOWNLOADS&style=for-the-badge&color=brightgreen"></a>
 </p>
 
 ## Usage
