@@ -47,3 +47,4 @@ options:
   -u, --uninstall  Uninstall Kali Nethunter In Termux.
   -h, --help       Show This Help Message And Exit.
 ```
+test
